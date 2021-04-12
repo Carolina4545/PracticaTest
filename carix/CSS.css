@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+*{
+
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	color: grey;
+}
+header{
+	background-image:linear-gradient(rgba(18,37,98,0.7),rgba(0,0,0,0.3)),url(imagen2/cabezera.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	/*padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: 10px;
+	padding-right: 10px;*/
+	padding: 100px 10px 100px 10px;
+	text-align: center;
+	
+
+	}
+.titulo{
+	color: #fbfbfb;
+	font-size: 2,2rem;
+	border-top: 1px solid #ccc;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-top: 50px;
+}	
+.segundo{
+	display: none;
+	/*padding: 50px;*/
+}
+.inicio-contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.foto{
+	padding: 20px;
+}
+.foto h1{
+	color: black;
+	padding-bottom: 30px;
+	padding-top: 10px;
+}
+.foto img{
+	padding-bottom:20px;
+	width: 100%; 
+}
+/**********modo tableta************/
+@media(min-width: 533px){
+	header{
+		padding-top: 130px;
+		padding-bottom: 130px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.titulo{
+		font-size: 3.2rem;
+	}
+	.segundo{
+		display: block;
+	}
+	.inicio-contenedor{
+		flex-wrap: nowrap;
+	}
+	.foto img{
+		width: 100%;
+	}
+}
+/**********modo ordenador**********/
+@media(min-width: 900px){
+	.titulo{
+		margin-left: 300px;
+		margin-right: 300px;
+		text-align: center;
+	}
+}
